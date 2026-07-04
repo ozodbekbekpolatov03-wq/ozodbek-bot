@@ -14,7 +14,7 @@ last_replied = {}
 LIMIT_24H = 86400
 
 # Sessiya fayli nomi
-client = TelegramClient('ozodbek_session', api_id, api_hash)
+client = TelegramClient('yangi_sesiya', api_id, api_hash)
 
 @client.on(events.NewMessage(incoming=True))
 async def handler(event):
