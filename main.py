@@ -38,8 +38,12 @@ async def handler(event):
         sender = await event.get_sender()
         first_name = sender.first_name if sender and sender.first_name else "Do'stim"
         
-        reply_text = f"Assalomu alaykum, {first_name}! 😊\n\nMen Ozodbekning yordamchisiman..."
-        
+                reply_text = (
+            f"Assalomu alaykum, {first_name}! 😊\n\n"
+            "Men Ozodbekning avtomatik yordamchisiman. "
+            "Ozodbek hozirda biroz band bo'lishi mumkin. "
+            "Xabaringizni qoldiring, u bo'shashi bilan sizga albatta javob beradi. 🤝"
+        )
         try:
             await asyncio.sleep(1)
             await event.reply(reply_text)
