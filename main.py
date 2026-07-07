@@ -17,7 +17,7 @@ def run_flask():
     app.run(host='0.0.0.0', port=port)
 
 # --- BOT QISMI ---
-api_id = 25332964
+api_id = 35332964
 api_hash = "c36507141f58f035186d724e934fba4a"
 last_replied = {}
 LIMIT_24H = 24 * 60 * 60
